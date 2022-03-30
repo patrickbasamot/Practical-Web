@@ -16,9 +16,10 @@ fetchData();
 
 function display(data){
 
-    for(let i=0; i<data.length; i++){
-        //Create new element in every loop
 
+    for(let i=0; i<data.length; i++){
+
+        //Create new element in every loop
         const div = document.createElement('div')
         const name = document.createElement('h3');
         const description = document.createElement('p');
@@ -29,6 +30,7 @@ function display(data){
         description.innerText = data[i].description;
          img.src = data[i].image_link;
  
+         
          //Structure the layout 
          container.appendChild(div);
          div.appendChild(img);
