@@ -1,5 +1,4 @@
 
-const title = document.querySelector('.Title');
 const container = document.querySelector('.container');
 
 
@@ -12,24 +11,26 @@ async function fetchText() {
 
         
 
-     
+//fetch data     
 fetchText();
-// title.innerText = 'qwewqe'
+
 
 function show(data){
 
     for(let i=0; i<data.length; i++){
+        //Create new element in every loop
+
         const div = document.createElement('div')
         const name = document.createElement('h3');
         const description = document.createElement('p');
         const img = document.createElement('img');
  
-        //Assign the data in every in the create element in HTML
+        //Assign the data in every element that created above to be displayed in HTML
         name.innerText =data[i].name;
         description.innerText = data[i].description;
          img.src = data[i].image_link;
  
-         //Structure the layout
+         //Structure the layout 
          container.appendChild(div);
          div.appendChild(img);
         div.appendChild(name);
