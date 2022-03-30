@@ -2,20 +2,19 @@
 const container = document.querySelector('.container');
 
 
-async function fetchText() {
+async function fetchData() {
     let response = await fetch('https://raw.githubusercontent.com/ASU-CIT/test-data/main/makeup.json');
             let data = await response.json();
-          
-                show(data);
+                display(data);
         }
 
         
 
-//fetch data     
-fetchText();
+//Call the function fetchData    
+fetchData();
 
 
-function show(data){
+function display(data){
 
     for(let i=0; i<data.length; i++){
         //Create new element in every loop
