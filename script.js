@@ -30,8 +30,10 @@ function display(data){
         name.innerText =data[i].name;
         description.innerText = data[i].description;
         img.src = data[i].image_link;
+        img.alt = data[i].name;
         productLink.href = data[i].product_link;
         productLink.innerText = 'Product Page';
+        
          //Structure the layout 
         container.appendChild(div);
         div.appendChild(img);
