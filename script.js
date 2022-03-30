@@ -33,13 +33,15 @@ function display(data){
         img.alt = data[i].name;
         productLink.href = data[i].product_link;
         productLink.innerText = 'Product Page';
-        
+
          //Structure the layout 
         container.appendChild(div);
+
         div.appendChild(img);
         div.appendChild(name);
         div.appendChild(productLink);
         div.appendChild(description);
+    
     }
 }
 
