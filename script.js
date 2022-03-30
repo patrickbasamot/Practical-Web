@@ -32,10 +32,10 @@ function display(data){
  
          
          //Structure the layout 
-         container.appendChild(div);
-         div.appendChild(img);
+        container.appendChild(div);
+        div.appendChild(img);
         div.appendChild(name);
-         div.appendChild(description);
+        div.appendChild(description);
     }
 }
 
