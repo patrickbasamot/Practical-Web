@@ -1,7 +1,7 @@
 
 const container = document.querySelector('.container');
 
-
+//Fetch Data with link
 async function fetchData() {
     let response = await fetch('https://raw.githubusercontent.com/ASU-CIT/test-data/main/makeup.json');
             let data = await response.json();
@@ -31,7 +31,7 @@ function display(data){
         description.innerText = data[i].description;
         img.src = data[i].image_link;
         productLink.href = data[i].product_link;
-        productLink.innerText = data[i].product_link;
+        productLink.innerText = 'Product Page';
          //Structure the layout 
         container.appendChild(div);
         div.appendChild(img);
