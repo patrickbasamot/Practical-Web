@@ -24,17 +24,19 @@ function display(data){
         const name = document.createElement('h3');
         const description = document.createElement('p');
         const img = document.createElement('img');
+        const productLink = document.createElement('a');
  
         //Assign the data in every element that created above to be displayed in HTML
         name.innerText =data[i].name;
         description.innerText = data[i].description;
-         img.src = data[i].image_link;
- 
-         
+        img.src = data[i].image_link;
+        productLink.href = data[i].product_link;
+        productLink.innerText = data[i].product_link;
          //Structure the layout 
         container.appendChild(div);
         div.appendChild(img);
         div.appendChild(name);
+        div.appendChild(productLink);
         div.appendChild(description);
     }
 }
