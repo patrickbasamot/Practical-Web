@@ -1,7 +1,7 @@
 
 const container = document.querySelector('.container');
 
-//Fetch Data with link
+//Fetch Data with url provided in https://github.com/ASU-CIT/test-data
 async function fetchData() {
     let response = await fetch('https://raw.githubusercontent.com/ASU-CIT/test-data/main/makeup.json');
             let data = await response.json();
@@ -48,7 +48,7 @@ function display(data){
     
     // }
 
-    
+
     //Using forEach loop
 
     data.forEach(row => {
@@ -69,9 +69,8 @@ function display(data){
         productLink.href = row.product_link;
         productLink.innerText = 'Product Page';
 
-         //Structure the layout 
+        //Structure the layout 
         container.appendChild(div);
-
         div.appendChild(img);
         div.appendChild(name);
         div.appendChild(productLink);
