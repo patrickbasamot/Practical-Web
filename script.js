@@ -19,6 +19,7 @@ fetchData().catch(error =>{
 function display(data){
 
             //Using for loop
+
     // for(let i=0; i<data.length; i++){
 
     //     //Create new element in every loop
@@ -29,6 +30,7 @@ function display(data){
     //     const productLink = document.createElement('a');
  
     //     //Assign the data in every element that created above to be displayed in HTML
+
     //     name.innerText =data[i].name;
     //     description.innerText = data[i].description;
     //     img.src = data[i].image_link;
@@ -37,8 +39,8 @@ function display(data){
     //     productLink.innerText = 'Product Page';
 
     //      //Structure the layout 
-    //     container.appendChild(div);
 
+    //     container.appendChild(div);
     //     div.appendChild(img);
     //     div.appendChild(name);
     //     div.appendChild(productLink);
@@ -46,7 +48,9 @@ function display(data){
     
     // }
 
+    
     //Using forEach loop
+
     data.forEach(row => {
 
         //Create new element in every loop
