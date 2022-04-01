@@ -3,7 +3,7 @@ const container = document.querySelector('.container');
 
 //Fetch Data with url provided in https://github.com/ASU-CIT/test-data
 async function fetchData() {
-    let response = await fetch('https://raw.githubusercontent.com/ASU-CIT/test-data/main/makeup.json');
+    let response = await fetch('https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline');
             let data = await response.json();
                 display(data);
         }
