@@ -75,7 +75,7 @@ function display(data){
         div.appendChild(name);
         div.appendChild(productLink);
         div.appendChild(description);
-
+        div.className = 'item-container';
     });
 }
 

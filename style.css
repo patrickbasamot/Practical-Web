@@ -4,11 +4,13 @@
     margin: 0;
 }
 .container{
-    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    padding: 50px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    justify-items: center;
     grid-gap: 40px;
-  text-align: center;
+    text-align: center;
 }
 p{
     font-size: 1.3em;
@@ -50,4 +52,11 @@ a{
     background-color: black;
     color: white;
     border-radius: 10px;
+}
+.item-container{
+    padding: 20px;
+    background-color: aquamarine;
+    color: black;
+    border-radius: 18px;
+
 }
