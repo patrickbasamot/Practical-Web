@@ -1,2 +1,11 @@
 # Practical-Web
-![Sample Screenshot of Finished Product](./img/Screenshot%20from%202022-04-24%2000-07-03.png);
+
+A practical 
+
+Built using Vanilla HTML CSS and Javascript.
+
+![Desktop of the project](./img/ss1.png);
+
+A mobile responsive fetch data practical project.
+
+![Mobile View of the Project](./img/ss2mobile.png);
