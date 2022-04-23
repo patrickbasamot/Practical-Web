@@ -6,6 +6,7 @@ async function fetchData() {
     let response = await fetch('https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline');
             let data = await response.json();
                 display(data);
+                console.log(data)
         }
 
         
@@ -54,10 +55,13 @@ function display(data){
     data.forEach(row => {
 
         //Create new element in every loop
-        const div = document.createElement('div')
+        const flex = document.createElement('div')
+        const col1 = document.createElement('div');
+        const col2 = document.createElement('div');
         const name = document.createElement('h3');
         const description = document.createElement('p');
         const img = document.createElement('img');
+        const btnOrder = document.createElement('button');
         const productLink = document.createElement('a');
     
     
@@ -67,15 +71,19 @@ function display(data){
         img.src = row.image_link;
         img.alt = row.name;
         productLink.href = row.product_link;
-        productLink.innerText = 'Product Page';
-
+        productLink.innerText= 'Order Now'
         //Structure the layout 
-        container.appendChild(div);
-        div.appendChild(img);
-        div.appendChild(name);
-        div.appendChild(productLink);
-        div.appendChild(description);
-        div.className = 'item-container';
+        container.appendChild(flex);
+        // btnOrder.appendChild(productLink);
+        flex.appendChild(col1);
+        flex.appendChild(col2);
+        col1.appendChild(img);
+        col2.appendChild(name);
+        col2.appendChild(description);
+        col2.appendChild(productLink);
+        col1.classList ='product-img';
+        col2.className ='title-description';
+        flex.className = 'item-container';
     });
 }
 
