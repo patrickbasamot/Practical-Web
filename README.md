@@ -8,4 +8,4 @@ Built using Vanilla HTML CSS and Javascript.
 
 A mobile responsive fetch data practical project.
 
-![Mobile View of the Project](./img/ss2mobile.png);
+![Mobile View of the Project](./img/ss2mobile.png)
