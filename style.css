@@ -22,16 +22,19 @@ body{
 p{
     width: 100%;
     padding: 1em 2em;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: justify;
     
 }
 dialog{
     margin: 0 auto;
-    top:35%;
+    top:25%;
     background-color: black;
     color: white;
-    min-width: (22rem,90%);
+
+    max-height: 50vh;
+    width: 35rem;
+    max-width:90%;
     border-radius: 12px;
     border: black 2px solid;
 }
