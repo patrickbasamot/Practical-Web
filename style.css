@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;700&display=swap');
 :root{
     --bg-clr:#E18897;
      --fnt-color: #FFFFFE; 
@@ -85,6 +84,11 @@ a{
     display: flex;
 
 }
+h1{
+    font-weight:200;
+    color: var(--fnt-color);
+ 
+}
 
 a:hover{
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -93,18 +97,10 @@ a:hover{
     text-align: center;
     background-color: black;
     color: white;
-    padding: 20px;
-}
-ul{
-    display: flex;
-    justify-content: space-around;
-    gap: 1em;
+    padding: 1em 0;
+    position: relative;
 }
 
-li{
-    list-style:none;
-    font-size: 1.2rem;
-}
 .img-product{
     width: 100%;
     align-self: center;
