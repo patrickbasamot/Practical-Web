@@ -81,14 +81,13 @@ function display(data){
 
         //Structure the layout into the DOM
         container.appendChild(flex);
-        // btnOrder.appendChild(productLink);
         flex.appendChild(col1);
         flex.appendChild(col2);
-      
         col1.appendChild(img);
         col2.appendChild(name);
-        // col2.appendChild(description);
         col2.appendChild(productLink);
+
+        //Assign classnames for CSS
         col1.classList ='product-img';
         col2.className ='title-description';
         flex.className = 'item-container';
