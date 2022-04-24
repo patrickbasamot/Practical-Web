@@ -30,13 +30,12 @@ dialog{
     margin: 0 auto;
     top:25%;
     background-color: black;
-    color: white;
-
+    color: var(--fnt-color);
     max-height: 50vh;
     width: 35rem;
     max-width:90%;
     border-radius: 12px;
-    border: black 2px solid;
+    border: transparent;
 }
 .container{
     font-family: 'Roboto', sans-serif;
@@ -108,6 +107,7 @@ li{
 }
 .img-product{
     width: 100%;
+    align-self: center;
     justify-self: center;
 }
 .title-description{
