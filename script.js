@@ -60,7 +60,7 @@ function display(data){
 
     data.forEach(row => {
 
-        //Create new element in every loop
+        //Create new element for each data
         const flex = document.createElement('div')
         const col1 = document.createElement('div');
         const col2 = document.createElement('div');
@@ -79,6 +79,7 @@ function display(data){
         productLink.href = row.product_link;
         productLink.innerText= 'Check Product'
 
+
         //Structure the layout into the DOM
         container.appendChild(flex);
         flex.appendChild(col1);
@@ -87,7 +88,7 @@ function display(data){
         col2.appendChild(name);
         col2.appendChild(productLink);
 
-        //Assign classnames for CSS
+        //Assign classNames for CSS Styling
         col1.classList ='product-img';
         col2.className ='title-description';
         flex.className = 'item-container';
@@ -102,7 +103,7 @@ function display(data){
         })
         modal.addEventListener('click', () =>{
             var rect = modal.getBoundingClientRect();
-            var isInDialog=(rect.top <= event.clientY && event.clientY <= rect.top + rect.height
+            var isInDialog = (rect.top <= event.clientY && event.clientY <= rect.top + rect.height
               && rect.left <= event.clientX && event.clientX <= rect.left + rect.width);
             if (!isInDialog) {
                 modal.close();
