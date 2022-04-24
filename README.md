@@ -13,8 +13,10 @@
 
 Built using Vanilla HTML CSS and Javascript.
 
+### A sample look in Desktop
 ![Desktop of the project](./img/ss1.png);
 
-A mobile responsive fetch data practical project.
 
+
+### UI in Mobile devices
 ![Mobile View of the Project](./img/ss2mobile.png)
