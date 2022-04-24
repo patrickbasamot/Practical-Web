@@ -67,28 +67,47 @@ function display(data){
         const name = document.createElement('h3');
         const description = document.createElement('p');
         const img = document.createElement('img');
-        const btnOrder = document.createElement('button');
+        const modal = document.createElement('dialog');
         const productLink = document.createElement('a');
-    
     
         //Assign the data in every element that created above to be displayed in HTML
         name.innerText =row.name;
-        description.innerText = row.description;
+        modal.innerText = row.description;
         img.src = row.image_link;
         img.alt = row.name;
         productLink.href = row.product_link;
         productLink.innerText= 'Check Product'
-        //Structure the layout 
+
+        //Structure the layout into the DOM
         container.appendChild(flex);
         // btnOrder.appendChild(productLink);
         flex.appendChild(col1);
         flex.appendChild(col2);
+      
         col1.appendChild(img);
         col2.appendChild(name);
-        col2.appendChild(description);
+        // col2.appendChild(description);
         col2.appendChild(productLink);
         col1.classList ='product-img';
         col2.className ='title-description';
         flex.className = 'item-container';
+
+        //Modal
+        col1.appendChild(modal);
+
+        img.addEventListener('click', () =>{
+         modal.showModal();
+         
+        })
+        modal.addEventListener('click', () =>{
+            var rect = modal.getBoundingClientRect();
+            var isInDialog=(rect.top <= event.clientY && event.clientY <= rect.top + rect.height
+              && rect.left <= event.clientX && event.clientX <= rect.left + rect.width);
+            if (!isInDialog) {
+                modal.close();
+            }
+        })
+
+
     });
 }

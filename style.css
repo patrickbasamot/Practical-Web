@@ -213,12 +213,12 @@ img:hover{
 }
 @media (max-width:550px) {
 
-    /* .container{
+    .container{
         grid-template-columns: repeat(1,100%);
         padding: 1.5em;
         grid-gap:2em;
       
-    } */
+    }
     .item-container{
 
         display: flex;
@@ -239,7 +239,6 @@ img:hover{
     .item-container{
 
         display: flex;
-        
     
     }
 }
@@ -248,19 +247,18 @@ img:hover{
     .container{
         grid-template-columns: repeat(1,100%);
         padding: 1em;
-        grid-gap:1.5em;
+        grid-gap:1em;
     }
     .item-container{
 
         display: flex;
-        border-radius: 1em;
         align-items: center;
     }
     .img-product{
         width: 100%;
     }
     .title-description{
-        margin-left: 2em;
+        margin-left: 1.5em;
         align-self: center;
         width: 100%;
         justify-self: center;
