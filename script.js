@@ -1,12 +1,19 @@
 
 const container = document.querySelector('.container');
 
-//Fetch Data with url provided in https://github.com/ASU-CIT/test-data
+//Fetch Data with APIs provided in https://github.com/ASU-CIT/test-data and  https://github.com/ASU-CIT/practical-2022
+
+const urlTest = 'https://raw.githubusercontent.com/ASU-CIT/test-data/main/makeup.json';
+const urlLargerData = 'https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline';
+
+
 async function fetchData() {
-    let response = await fetch('https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline');
+    
+    let response = await fetch(urlLargerData);
             let data = await response.json();
                 display(data);
-        }
+                console.log(data);
+}
 
         
 
