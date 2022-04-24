@@ -18,5 +18,5 @@ Built using Vanilla HTML CSS and Javascript.
 
 
 
-### UI in Mobile devices
+### UI in Mobile device
 ![Mobile View of the Project](./img/ss2mobile.png)
