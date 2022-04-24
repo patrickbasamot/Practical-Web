@@ -12,7 +12,6 @@ async function fetchData() {
     let response = await fetch(urlLargerData);
             let data = await response.json();
                 display(data);
-                console.log(data);
 }
 
         
@@ -73,10 +72,10 @@ function display(data){
     
         //Assign the data in every element that created above to be displayed in HTML
         name.innerText =row.name;
-        description.innerText = row.description;
         img.src = row.image_link;
         img.alt = row.name;
         productLink.href = row.product_link;
+        description.innerText = row.description;
         productLink.innerText= 'Check Product'
 
 
