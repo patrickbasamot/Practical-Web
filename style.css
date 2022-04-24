@@ -31,8 +31,7 @@ dialog{
     top:35%;
     background-color: black;
     color: white;
-    min-width: 50%;
-    max-width: 90%;
+    min-width: (22rem,90%);
     border-radius: 12px;
     border: black 2px solid;
 }
