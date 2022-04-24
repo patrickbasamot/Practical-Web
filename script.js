@@ -70,7 +70,7 @@ function display(data){
         img.src = row.image_link;
         img.alt = row.name;
         productLink.href = row.product_link;
-        productLink.innerText= 'Order Now'
+        productLink.innerText= 'Check Product'
         //Structure the layout 
         container.appendChild(flex);
         // btnOrder.appendChild(productLink);
@@ -85,4 +85,3 @@ function display(data){
         flex.className = 'item-container';
     });
 }
-
