@@ -69,10 +69,11 @@ function display(data){
         const img = document.createElement('img');
         const modal = document.createElement('dialog');
         const productLink = document.createElement('a');
+        
     
         //Assign the data in every element that created above to be displayed in HTML
         name.innerText =row.name;
-        modal.innerText = row.description;
+        description.innerText = row.description;
         img.src = row.image_link;
         img.alt = row.name;
         productLink.href = row.product_link;
@@ -94,6 +95,7 @@ function display(data){
 
         //Modal
         col1.appendChild(modal);
+        modal.appendChild(description);
 
         img.addEventListener('click', () =>{
          modal.showModal();

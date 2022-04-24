@@ -13,10 +13,22 @@
     margin: 0;
 }
 body{
+    /* position: relative; */
     background-color: var(--bg-clr);
     font-family: var(--fnt-fmly);
     color:var(--fnt-color)
-
+    
+}
+p{
+    width: 100%;
+    padding: 0.2em 0.5em;
+    text-align: justify;
+}
+dialog{
+    margin: 0 auto;
+    top:35%;
+    width: 50%;
+    border-radius: 12px;
 }
 .container{
     font-family: 'Roboto', sans-serif;
@@ -31,7 +43,6 @@ body{
 p{
     font-size: 1rem;
     margin-top: 15px;
-    display: none;
     text-align: justify;
 }
 h3{
