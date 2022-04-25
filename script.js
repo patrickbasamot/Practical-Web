@@ -78,7 +78,8 @@ function display(data){
 
         productName.push(productTitle);
         index.push(flex);
-        //Assign the Output/data in every element that created above to be displayed in our Web page 
+
+        //Assign the data in every element that created above to be displayed in our Web page 
         productTitle.textContent =row.name;
         img.src = row.image_link;
         img.alt = row.name;

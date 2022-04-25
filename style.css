@@ -33,16 +33,18 @@ dialog{
     max-height: 50vh;
     width: 35rem;
     max-width:90%;
+   
     border-radius: 12px;
     border: transparent;
 }
 .container{
     font-family: 'Roboto', sans-serif;
-    padding: 2.5em 1em;
+    padding: 3.5em 1em;
+    min-height: 100vh;
     display: grid;
     position: relative;
     grid-template-columns: repeat(2,30rem);
-    align-items: center;
+    place-items: center;
     grid-gap: 7em;
     justify-content: center;
     text-align: center;
