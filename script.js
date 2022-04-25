@@ -129,7 +129,7 @@ function search(){
     input.addEventListener('input', () =>{
 
      for(let i=0; i<productName.length; i++){
-        if(!productName[i].innerText.includes(input.value)){
+        if(!productName[i].innerText.includes(input.value) && !productName[i].innerText.toLowerCase().includes(input.value) ){
             index[i].style.display ='none';
         }  else {
             index[i].style.display="flex";                 
