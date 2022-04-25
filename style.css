@@ -40,6 +40,7 @@ dialog{
     font-family: 'Roboto', sans-serif;
     padding: 2.5em 1em;
     display: grid;
+    position: relative;
     grid-template-columns: repeat(2,30rem);
     align-items: center;
     grid-gap: 7em;
@@ -65,8 +66,9 @@ footer{
     background-color: black;
     color: white;
     padding: 10px;
-    margin-top: 20px;
+    margin-top: auto;
     font-size: 0.8rem;
+    bottom: 0;
 }
 a{
     text-decoration: none;
@@ -116,6 +118,7 @@ a:hover{
 }
 img:hover{
     transform: scale(1.2);
+    cursor: pointer;
 }
 /* h1,ul{
     margin: 0 40px 0 40px;

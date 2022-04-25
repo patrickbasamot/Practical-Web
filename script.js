@@ -15,7 +15,7 @@ async function fetchData() {
     let response = await fetch(urlLargerData);
             let data = await response.json();
                 display(data);
-                search(data);
+                search();
     
 }
 
