@@ -1,18 +1,17 @@
-
 const container = document.querySelector('.container');
 let input = document.querySelector('.search');
 
+
 let productName = [];
 let index = [];
-//Fetch Data with APIs provided in https://github.com/ASU-CIT/test-data and  https://github.com/ASU-CIT/practical-2022
 
+//Fetch Data with APIs provided in https://github.com/ASU-CIT/test-data and  https://github.com/ASU-CIT/practical-2022
 const urlTest = 'https://raw.githubusercontent.com/ASU-CIT/test-data/main/makeup.json';
 const urlLargerData = 'https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline';
 
 
 async function fetchData() {
-    
-    let response = await fetch(urlLargerData);
+    let response = await fetch(urlTest);
             let data = await response.json();
                 display(data);
                 search();
