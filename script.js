@@ -1,6 +1,9 @@
 
 const container = document.querySelector('.container');
+let input = document.querySelector('.search');
 
+let productName = [];
+let index = [];
 //Fetch Data with APIs provided in https://github.com/ASU-CIT/test-data and  https://github.com/ASU-CIT/practical-2022
 
 const urlTest = 'https://raw.githubusercontent.com/ASU-CIT/test-data/main/makeup.json';
@@ -12,6 +15,8 @@ async function fetchData() {
     let response = await fetch(urlLargerData);
             let data = await response.json();
                 display(data);
+                search(data);
+    
 }
 
         
@@ -56,7 +61,7 @@ function display(data){
 
 
     //Using forEach loop
-
+   
     data.forEach(row => {
 
         //Create new element for each data
@@ -68,17 +73,20 @@ function display(data){
         const img = document.createElement('img');
         const modal = document.createElement('dialog');
         const productLink = document.createElement('a');
-        
-    
-        //Assign the data in every element that created above to be displayed in HTML
-        name.innerText =row.name;
+         
+
+        productName.push(name);
+        index.push(flex);
+        //Assign the Output/data in every element that created above to be displayed in our Web page 
+        name.textContent =row.name;
         img.src = row.image_link;
         img.alt = row.name;
         productLink.href = row.product_link;
-        description.innerText = row.description;
-        productLink.innerText= 'Check Product'
+        description.textContent = row.description;
+        productLink.textContent= 'Check Product'
 
 
+        // products.unshift(name.textContent);
         //Structure the layout into the DOM
         container.appendChild(flex);
         flex.appendChild(col1);
@@ -87,15 +95,19 @@ function display(data){
         col2.appendChild(name);
         col2.appendChild(productLink);
 
+
         //Assign classNames for CSS Styling
         col1.classList ='product-img';
         col2.className ='title-description';
         flex.className = 'item-container';
+        name.className = 'title-header';
 
         //Modal
         col1.appendChild(modal);
         modal.appendChild(description);
 
+
+        
         img.addEventListener('click', () =>{
          modal.showModal();
          
@@ -108,7 +120,23 @@ function display(data){
                 modal.close();
             }
         })
+    });
+}
 
+
+
+function search(){
+    input.addEventListener('input', () =>{
+
+     for(let i=0; i<productName.length; i++){
+        if(!productName[i].innerText.toLowerCase().includes(input.value)){
+            index[i].style.display ='none';
+        }  else {
+            index[i].style.display="flex";                 
+        }
+        
+     }
 
     });
 }
+

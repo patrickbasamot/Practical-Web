@@ -94,10 +94,12 @@ a:hover{
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 .nav-bar{
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: black;
     color: white;
-    padding: 1em 0;
+    padding: 1em 3em;
     position: relative;
 }
 
