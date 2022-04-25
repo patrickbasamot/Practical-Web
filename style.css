@@ -133,6 +133,8 @@ img:hover{
     border: 2px white solid;
     border-radius: 8px;
     color: white;
+    font-size: 0.9rem;
+    width: 100%;
 }
 .fa{
     position: absolute;
