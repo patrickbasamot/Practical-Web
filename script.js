@@ -67,21 +67,23 @@ function display(data){
         const flex = document.createElement('div')
         const col1 = document.createElement('div');
         const col2 = document.createElement('div');
-        const name = document.createElement('h3');
-        const description = document.createElement('p');
+        const productTitle = document.createElement('h3');
+        const itemDescription = document.createElement('p');
         const img = document.createElement('img');
         const modal = document.createElement('dialog');
         const productLink = document.createElement('a');
          
+        const {name,description} = row;
+        
 
-        productName.push(name);
+        productName.push(productTitle);
         index.push(flex);
         //Assign the Output/data in every element that created above to be displayed in our Web page 
-        name.textContent =row.name;
+        productTitle.textContent =row.name;
         img.src = row.image_link;
         img.alt = row.name;
         productLink.href = row.product_link;
-        description.textContent = row.description;
+        itemDescription.textContent = row.description;
         productLink.textContent= 'Check Product'
 
 
@@ -91,7 +93,7 @@ function display(data){
         flex.appendChild(col1);
         flex.appendChild(col2);
         col1.appendChild(img);
-        col2.appendChild(name);
+        col2.appendChild(productTitle);
         col2.appendChild(productLink);
 
 
@@ -99,11 +101,11 @@ function display(data){
         col1.classList ='product-img';
         col2.className ='title-description';
         flex.className = 'item-container';
-        name.className = 'title-header';
+        productTitle.className = 'title-header';
 
         //Modal
         col1.appendChild(modal);
-        modal.appendChild(description);
+        modal.appendChild(itemDescription);
 
 
         
