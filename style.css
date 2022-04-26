@@ -45,13 +45,13 @@ dialog{
 }
 .container{
     font-family: 'Roboto', sans-serif;
-    padding: 3.5em 1em;
+    padding: 2.5em 2em;
     display: grid;
     min-height: 100vh;
     position: relative;
     grid-template-columns: repeat(2,33rem);
     align-items: flex-start;
-    grid-gap: 7em;
+    grid-gap: 5em;
     justify-content: center;
     text-align: center;
 }
@@ -321,6 +321,9 @@ img:hover{
         text-align: center;
     
     }
+    h4{
+        width: 25%;
+    }
     h1{
         font-size: 1rem;
     }
@@ -383,7 +386,7 @@ img:hover{
     h4{
         font-size: 0.7rem;
         margin: 0.8em auto;
-        
+        width: 4.5rem;
 
     }
     img{
