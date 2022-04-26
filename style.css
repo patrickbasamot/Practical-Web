@@ -34,7 +34,7 @@ p{
 }
 dialog{
     margin: 0 auto;
-    top:40%;
+    top:35%;
     background-color: black;
     color: var(--fnt-color);
     max-height: 50vh;
