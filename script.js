@@ -14,7 +14,6 @@ async function fetchData() {
     let response = await fetch(urlLargerData);
             let data = await response.json();
 
-
                 //Create Functions
                 display(data);
                 search();
@@ -26,6 +25,7 @@ async function fetchData() {
 fetchData().catch(error =>{
     console.error(error);
 });
+
 
 function display(data){
             //Using for loop
