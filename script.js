@@ -15,6 +15,7 @@ async function fetchData() {
             let data = await response.json();
 
 
+                //Create Functions
                 display(data);
                 search();
 }
@@ -93,13 +94,16 @@ function display(data){
         //Structure the layout into the DOM
         container.appendChild(flex);
         flex.appendChild(col1);
-        flex.appendChild(col2);
         col1.appendChild(img);
+
+        flex.appendChild(col2);
         col2.appendChild(productTitle);
         col2.appendChild(productPrice);
         col2.appendChild(productLink);
         
-
+         //Modal
+         col1.appendChild(modal);
+         modal.appendChild(itemDescription);
 
         //Assign classNames for CSS Styling
         col1.classList ='product-img';
@@ -107,12 +111,10 @@ function display(data){
         flex.className = 'item-container';
         productTitle.className = 'title-header';
 
-        //Modal
-        col1.appendChild(modal);
-        modal.appendChild(itemDescription);
+       
 
 
-        
+        //Onclick function each image for production description 
         img.addEventListener('click', () =>{
          modal.showModal();
          
