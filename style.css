@@ -34,7 +34,7 @@ p{
 }
 dialog{
     margin: 0 auto;
-    top:25%;
+    top:40%;
     background-color: black;
     color: var(--fnt-color);
     max-height: 50vh;
@@ -366,6 +366,9 @@ img:hover{
     }
     h1{
         font-size: 0.9rem;
+    }
+    dialog{
+        top: 50%;
     }
     a{
         text-decoration: none;
