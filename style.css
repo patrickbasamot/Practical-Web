@@ -367,9 +367,7 @@ img:hover{
     h1{
         font-size: 0.9rem;
     }
-    dialog{
-        top: 50%;
-    }
+
     a{
         text-decoration: none;
         background-color: var(--accnt-clr);
