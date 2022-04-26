@@ -38,7 +38,6 @@ dialog{
     max-height: 50vh;
     width: 35rem;
     max-width:90%;
-   
     border-radius: 12px;
     border: transparent;
 }
@@ -54,10 +53,23 @@ dialog{
     justify-content: center;
     text-align: center;
 }
+.sorting{
+    display: flex;
+}
 h3{
     font-size: 1.2rem;
+   
+
+}
+h3,h4{
     text-align: center;
-    margin-bottom: 1.5em;
+
+}
+h4{
+    font-size: 1rem;
+    padding: 1em;
+    margin: 0.5em;
+   color: whitesmoke;
 
 }
 img{
@@ -88,7 +100,6 @@ a{
     border-radius: 12px;
 }
 .item-container{
-    
     display: flex;
 
 }
@@ -121,7 +132,7 @@ a:hover{
 }
 .title-description{
     width: 100%;
-    margin-left: 2em;
+    margin-left: 1em;
     align-self: center;
     justify-self: center;
 }
@@ -175,7 +186,6 @@ img:hover{
     h3{
         font-size: 1rem;
         text-align: center;
-        margin-bottom: 2em;
     
     }
     img{
@@ -211,8 +221,10 @@ img:hover{
     h3{
         font-size: 0.85rem;
         text-align: center;
-        margin-bottom: 2em;
     
+    }
+    h4{
+        font-size: 0.8rem;
     }
     img{
         width: 8.5em;
@@ -245,8 +257,11 @@ img:hover{
     h3{
         font-size: 0.8rem;
         text-align: center;
-        margin-bottom: 1em;
+        
     
+    }
+    h4{
+        font-size: 0.75rem;
     }
     img{
         width: 6.5em;
@@ -300,7 +315,6 @@ img:hover{
     h3{
         font-size: 0.9rem;
         text-align: center;
-        margin-bottom: 1em;
     
     }
     h1{
@@ -343,7 +357,7 @@ img:hover{
         justify-self: center;
     }
     h1{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     a{
         text-decoration: none;
@@ -360,8 +374,12 @@ img:hover{
     h3{
         font-size: 0.75rem;
         text-align: center;
-        margin-bottom: 1em;
     
+    }
+    h4{
+        font-size: 0.7rem;
+        margin: 0;
+
     }
     img{
         width: 6.5em;
