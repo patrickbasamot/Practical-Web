@@ -37,7 +37,7 @@ dialog{
     top:35%;
     background-color: black;
     color: var(--fnt-color);
-    max-height: 50vh;
+    max-height: 40vh;
     width: 35rem;
     max-width:90%;
     border-radius: 12px;
