@@ -93,7 +93,7 @@ function display(data){
         productLink.textContent= 'Check Product'
 
       
-        // products.unshift(name.textContent);
+    
         //Structure the layout into the DOM
         container.appendChild(flex);
         flex.appendChild(col1);
