@@ -4,7 +4,6 @@ const sorter = document.querySelector('.sort');
 
 let productName = [];
 let index = [];
-let prices =[];
 
 //Fetch Data with APIs provided in https://github.com/ASU-CIT/test-data and  https://github.com/ASU-CIT/practical-2022
 const urlTest = 'https://raw.githubusercontent.com/ASU-CIT/test-data/main/makeup.json';
@@ -18,7 +17,6 @@ async function fetchData() {
 
                 display(data);
                 search();
-                sort();
 }
 
         
@@ -28,6 +26,7 @@ fetchData().catch(error =>{
     console.error(error);
 });
 
+console.log(productName)
 
 function display(data){
 
@@ -83,7 +82,7 @@ function display(data){
         
         productName.push(productTitle);
         index.push(flex);
-        prices.push(price);
+
         //Assign the data in every element that created above to be displayed in our Web page 
         productTitle.textContent = name;
         img.alt = name;

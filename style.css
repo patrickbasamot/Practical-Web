@@ -4,7 +4,7 @@
      --fnt-color: #FFFFFE; 
      --accnt-clr:#BC0C43;
      --fnt-fmly:'Poppins', sans-serif;
-     --option-clr:#f2dc77;
+     --option-clr:#85c470;
 
 }
 
@@ -65,10 +65,14 @@ h3{
 }
 
 h4{
-    font-size: 1rem;
-    margin: 0.5em;
+    font-size: 1.1rem;
+    margin: 1.5em auto;
     padding: 0.5em;
-   color: var(--option-clr);
+    width: 40%;
+   color: black;
+   background-color: #f6f0c4;
+   background-image: linear-gradient(315deg, #f6f0c4 75%, #d99ec9 0%);
+    border-radius: 10px;
 
 }
 img{
@@ -289,6 +293,7 @@ img:hover{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        align-items: center;
         /* align-items: center; */
       
     }
@@ -377,7 +382,8 @@ img:hover{
     }
     h4{
         font-size: 0.7rem;
-        margin: 0;
+        margin: 0.8em auto;
+        
 
     }
     img{
