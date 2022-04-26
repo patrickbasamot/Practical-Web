@@ -68,7 +68,7 @@ h4{
     font-size: 1.1rem;
     margin: 1.5em auto;
     padding: 0.5em;
-    width: 40%;
+    width: 5.5rem;
    color: black;
    background-color: #f6f0c4;
    background-image: linear-gradient(315deg, #f6f0c4 75%, #d99ec9 0%);
@@ -228,6 +228,7 @@ img:hover{
     }
     h4{
         font-size: 0.8rem;
+        width: 4.5rem;
     }
     img{
         width: 8.5em;
