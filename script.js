@@ -26,10 +26,7 @@ fetchData().catch(error =>{
     console.error(error);
 });
 
-console.log(productName)
-
 function display(data){
-
             //Using for loop
 
     // for(let i=0; i<data.length; i++){
@@ -62,7 +59,6 @@ function display(data){
 
 
     //Using forEach loop
-   
     data.forEach(row => {
 
         //Create new element for each data
@@ -76,7 +72,7 @@ function display(data){
         const modal = document.createElement('dialog');
         const productLink = document.createElement('a');
          
-    
+        //Get the data from API to be displayed in the web page. 
         const {name, description, image_link, product_link, price} = row;
 
         
