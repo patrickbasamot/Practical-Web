@@ -4,6 +4,8 @@
      --fnt-color: #FFFFFE; 
      --accnt-clr:#BC0C43;
      --fnt-fmly:'Poppins', sans-serif;
+     --option-clr:#f2dc77;
+
 }
 
 *,*::before,*::after{
@@ -47,7 +49,7 @@ dialog{
     display: grid;
     min-height: 100vh;
     position: relative;
-    grid-template-columns: repeat(2,32rem);
+    grid-template-columns: repeat(2,33rem);
     align-items: flex-start;
     grid-gap: 7em;
     justify-content: center;
@@ -58,18 +60,15 @@ dialog{
 }
 h3{
     font-size: 1.2rem;
-   
+   text-align: center;
 
 }
-h3,h4{
-    text-align: center;
 
-}
 h4{
     font-size: 1rem;
-    padding: 1em;
     margin: 0.5em;
-   color: whitesmoke;
+    padding: 0.5em;
+   color: var(--option-clr);
 
 }
 img{
@@ -132,7 +131,7 @@ a:hover{
 }
 .title-description{
     width: 100%;
-    margin-left: 1em;
+    margin-left: 2em;
     align-self: center;
     justify-self: center;
 }
