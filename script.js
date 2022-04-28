@@ -89,7 +89,7 @@ function display(data){
         itemDescription.textContent = description;
         productLink.textContent= 'Check Product'
 
-      
+        
     
         //Structure the layout into the DOM
         container.appendChild(flex);
@@ -106,7 +106,8 @@ function display(data){
          modal.appendChild(itemDescription);
 
         //Assign classNames for CSS Styling
-        col1.classList ='product-img';
+        img.className = 'img'
+        col1.className ='product-img';
         col2.className ='title-description';
         flex.className = 'item-container';
         productTitle.className = 'title-header';
