@@ -1,7 +1,7 @@
 const container = document.querySelector('.container');
 let input = document.querySelector('.search');
 const sorter = document.querySelector('.sort');
-
+const load = document.querySelector('.load');
 let productName = [];
 let index = [];
 
@@ -11,9 +11,10 @@ const urlLargerData = 'https://makeup-api.herokuapp.com/api/v1/products.json?bra
 
 
 async function fetchData() {
-    let response = await fetch(urlLargerData);
-            let data = await response.json();
-
+            load.style.display='block'
+             let response = await fetch(urlLargerData);
+             let data = await response.json();
+            load.style.display='none'
                 //Create Functions
                 display(data);
                 search();
@@ -63,6 +64,7 @@ function display(data){
     data.forEach(row => {
 
         //Create new element for each data
+
         const flex = document.createElement('div')
         const col1 = document.createElement('div');
         const col2 = document.createElement('div');
