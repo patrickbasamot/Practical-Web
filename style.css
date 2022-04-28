@@ -156,6 +156,19 @@ img:hover{
     font-size: 0.9rem;
     width: 100%;
 }
+.search-box{
+    width: 2em;
+    cursor: pointer;
+}
+.search-box:hover{
+    width: 100%;
+    transition: ease-in 0.5ms;
+
+}
+
+.search-box:focus{
+    width: 100%;
+}
 .fa{
     position: absolute;
     z-index: 3;
