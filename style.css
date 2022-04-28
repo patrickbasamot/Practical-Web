@@ -155,14 +155,16 @@ img:hover{
     color: white;
     font-size: 0.9rem;
     width: 100%;
+    /* cursor: pointer; */
 }
 .search-box{
     width: 2em;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .search-box:hover{
+    cursor: pointer;
     width: 100%;
-    transition: ease-in 0.5ms;
+    transition: ease-in 0.2ms;
 
 }
 
