@@ -2,6 +2,8 @@ const container = document.querySelector('.container');
 let input = document.querySelector('.search');
 const sorter = document.querySelector('.sort');
 const load = document.querySelector('.load');
+
+//Global Variable
 let productName = [];
 let index = [];
 
@@ -37,8 +39,7 @@ function display(data){
     //Using forEach loop
     data.forEach(row => {
 
-        //Create new element for each data
-
+        //Create new element in the DOM for each data
         const flex = document.createElement('div')
         const col1 = document.createElement('div');
         const col2 = document.createElement('div');
